@@ -3,11 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 import Typewriter from "typewriter-effect";
 const qna = () => {
-  const [question, setQuestion] = useState("");
+  // const [question, setQuestion] = useState("");
+  // const [generatedAnswers, setGeneratedAnswers] = useState(null);
   const [answer, setAnswer] = useState("");
   const [topic, setTopic] = useState("");
   const [generatedQuestions, setGeneratedQuestions] = useState(null);
-  const [generatedAnswers, setGeneratedAnswers] = useState(null);
   const [questionAnswered, setQuestionAnswered] = useState({});
   const [chat, setChat] = useState("");
   const [message, setMessage] = useState("");
@@ -136,6 +136,7 @@ const qna = () => {
                         autoStart: true,
                         loop: false,
                         delay: 20,
+                        key: question
                       }}
                     />
                   );
