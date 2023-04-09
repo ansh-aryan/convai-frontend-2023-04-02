@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import Typewriter from "typewriter-effect";
-const qna = () => {
+const QNA = () => {
   // const [question, setQuestion] = useState("");
   // const [generatedAnswers, setGeneratedAnswers] = useState(null);
   const [answer, setAnswer] = useState("");
@@ -294,4 +294,4 @@ const qna = () => {
   );
 };
 
-export default qna;
+export default QNA;
