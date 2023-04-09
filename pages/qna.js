@@ -148,6 +148,7 @@ const QNA = () => {
                     autoStart: true,
                     loop: true,
                     delay: 20,
+                    key: question
                   }}
                 />
               )}
