@@ -32,14 +32,14 @@ export default function Home() {
 
   return (
     <>
-      <section class="text-gray-400 h-screen bg-zinc-900 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-          <h1 class="text-4xl font-medium title-font mb-4 text-white">
+      <section className="text-gray-400 h-screen bg-zinc-900 body-font">
+        <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+          <h1 className="text-4xl font-medium title-font mb-4 text-white">
             CONVAI AI TUTOR
           </h1>
 
-          <div class="p-2 w-full">
-            <div class="relative">
+          <div className="p-2 w-full">
+            <div className="relative">
               {/* <h1>{answer}</h1> */}
               <Typewriter
                 options={{
@@ -52,9 +52,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div class="p-2 w-full">
-            <div class="relative">
-              <label for="message" class="leading-7 text-sm text-gray-400">
+          <div className="p-2 w-full">
+            <div className="relative">
+              <label for="message" className="leading-7 text-sm text-gray-400">
                 What Can I help you with today?
               </label>
               <textarea
@@ -64,29 +64,29 @@ export default function Home() {
                 onChange={(e) => {
                   setQuestion(e.target.value);
                 }}
-                class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
           </div>
           <button
             onClick={() => handleSubmit()}
-            class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
             Get Answer
           </button>
-          <div class="flex flex-col text-center w-full mt-6"></div>
-          <div class="flex mx-auto flex-wrap mb-20 ">
+          <div className="flex flex-col text-center w-full mt-6"></div>
+          <div className="flex mx-auto flex-wrap mb-20 ">
             <Link
               href="/"
-              class="sm:px-6 py-3 mr-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-800 inline-flex items-center leading-none border-indigo-500 text-white tracking-wider rounded-t"
+              className="sm:px-6 py-3 mr-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-800 inline-flex items-center leading-none border-indigo-500 text-white tracking-wider rounded-t"
             >
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5 mr-3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-5 h-5 mr-3"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -95,15 +95,15 @@ export default function Home() {
             </Link>
             <Link
               href="/qna"
-              class="sm:px-6 py-3 ml-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-800 inline-flex items-center leading-none border-indigo-500 text-white tracking-wider rounded-t"
+              className="sm:px-6 py-3 ml-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-800 inline-flex items-center leading-none border-indigo-500 text-white tracking-wider rounded-t"
             >
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5 mr-3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-5 h-5 mr-3"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
