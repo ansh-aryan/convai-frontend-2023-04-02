@@ -1,38 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# CONVAI AI Tutor Frontend Repository
 
-First, run the development server:
+CONVAI AI Tutor is an OpenAI powered narative learning webapp.
+
+
+
+
+## Run Locally
+
+Go to the project directory
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  cd convai-frontend-2023-04-02
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Start the server
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+  npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Demo
 
-To learn more about Next.js, take a look at the following resources:
+[Demo Link](https://convai-frontend-v2.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Demo Video
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Demo Video Link](https://drive.google.com/file/d/1ZuMgYzN9zNT0nVQV-KJp51DDbjptlMbG/view?usp=sharing)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- NextJs
+    * NextJs supports file based routing which makes routing between pages very fast and easy.
+- TailwindCSS
+    * TailwindCSS makes developing responsive and radiant WebApps very fast and simple.
+- TypewriterJs
+    * TypewriterJs is used to replicate ChatGPT's way of giving responses in order to make the user more inclinded to use this application because of the familiarity in user experience.
+
+
+
+## Future Prospects
+
+The following feautures can be added to the WebApp to make it more powerful and efficient :- 
+
+- Adding a database (prefarably PostgreSQL)   
+    * Keeping a record of all the chats the user has had with application can be helpful to reduce the load on the WebApp because it can be used to better understand a user's habits and can be used to emphasize more on the topics that are being frequently requested by the user.
+    * Also keeping track of the questions our application is unable to answer is beneficial to us as it opens up room for improvement in the language models.
+
+- Integration with chatbot applications like Dialogflow
+
